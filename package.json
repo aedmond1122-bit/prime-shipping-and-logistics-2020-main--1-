@@ -1,25 +1,23 @@
 {
-  "name": "prime-shipping-and-logistics-2020-main-(1)",
+  "name": "prime-shipping-and-logistics",
   "version": "1.0.0",
+  "description": "Prime Shipping & Logistics Website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aedmond1122-bit/prime-shipping-and-logistics-2020-main--1-.git"
+    "start": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/aedmond1122-bit/prime-shipping-and-logistics-2020-main--1-/issues"
-  },
-  "homepage": "https://github.com/aedmond1122-bit/prime-shipping-and-logistics-2020-main--1-#readme",
-  "description": "",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.12"
-  }
+    "tailwindcss": "^3.4.17"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
 }
