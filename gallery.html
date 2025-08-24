@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Gallery — Prime Shipping & Logistics</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Use local Tailwind build -->
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-[url('images/background.jpg')] bg-cover bg-center bg-fixed text-blue-800 relative">
+
+  <!-- Header -->
+  <header class="shadow bg-blue-800 bg-opacity-80">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html">
+        <img src="images/logo.jpg" alt="logo" class="h-16 rounded-lg border-4 border-blue-700 shadow">
+      </a>
+      <nav class="hidden md:flex space-x-6 text-white">
+        <a href="index.html" class="hover:text-yellow-400">Home</a>
+        <a href="services.html" class="hover:text-yellow-400">Services</a>
+        <a href="gallery.html" class="text-yellow-400 underline">Gallery</a>
+        <a href="about.html" class="hover:text-yellow-400">About Us</a>
+        <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+      </nav>
+      <button id="menu-toggle" class="md:hidden text-white text-2xl">☰</button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-blue-900 text-white px-4 py-2 space-y-2">
+      <a href="index.html" class="block">Home</a>
+      <a href="services.html" class="block">Services</a>
+      <a href="gallery.html" class="block text-yellow-400 underline">Gallery</a>
+      <a href="about.html" class="block">About Us</a>
+      <a href="contact.html" class="block">Contact</a>
+    </div>
+  </header>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4 text-center">
+
+      <!-- Section Header -->
+      <div class="mb-10">
+        <h2 class="text-4xl font-bold text-gray-800 mb-3">Our Gallery</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          A glimpse into our services, products, and projects. Explore what we deliver with pride and excellence.
+        </p>
+      </div>
+
+      <!-- Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
+
+        <!-- Item -->
+        <div class="relative group">
+          <img src="images/goodseller.jpg" alt="Goodseller"
+            class="w-full aspect-square object-cover rounded-xl shadow-md transform group-hover:scale-105 group-hover:shadow-xl transition duration-300 cursor-pointer"
+            onclick="openLightbox(this)" />
+          <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-white text-base font-medium opacity-0 group-hover:opacity-100 transition">Goodseller</div>
+        </div>
+
+        <div class="relative group">
+          <img src="images/rice.jpg" alt="5kg Rice Bag"
+            class="w-full aspect-square object-cover rounded-xl shadow-md transform group-hover:scale-105 group-hover:shadow-xl transition duration-300 cursor-pointer"
+            onclick="openLightbox(this)" />
+          <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-white text-base font-medium opacity-0 group-hover:opacity-100 transition">Rice</div>
+        </div>
+
+        <div class="relative group">
+          <img src="images/foca.jpg" alt="Foca Detergent"
+            class="w-full aspect-square object-cover rounded-xl shadow-md transform group-hover:scale-105 group-hover:shadow-xl transition duration-300 cursor-pointer"
+            onclick="openLightbox(this)" />
+          <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-white text-base font-medium opacity-0 group-hover:opacity-100 transition">Foca</div>
+        </div>
+
+        <div class="relative group">
+          <img src="images/mall.jpg" alt="Mall"
+            class="w-full aspect-square object-cover rounded-xl shadow-md transform group-hover:scale-105 group-hover:shadow-xl transition duration-300 cursor-pointer"
+            onclick="openLightbox(this)" />
+          <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-white text-base font-medium opacity-0 group-hover:opacity-100 transition">Mall</div>
+        </div>
+
+        <div class="relative group">
+          <img src="images/oat.jpg" alt="Oat"
+            class="w-full aspect-square object-cover rounded-xl shadow-md transform group-hover:scale-105 group-hover:shadow-xl transition duration-300 cursor-pointer"
+            onclick="openLightbox(this)" />
+          <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-white text-base font-medium opacity-0 group-hover:opacity-100 transition">Oat</div>
+        </div>
+
+        <div class="relative group">
+          <img src="images/range.jpg" alt="Range"
+            class="w-full aspect-square object-cover rounded-xl shadow-md transform group-hover:scale-105 group-hover:shadow-xl transition duration-300 cursor-pointer"
+            onclick="openLightbox(this)" />
+          <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-white text-base font-medium opacity-0 group-hover:opacity-100 transition">Range</div>
+        </div>
+
+        <div class="relative group">
+          <img src="images/car.jpg" alt="Car"
+            class="w-full aspect-square object-cover rounded-xl shadow-md transform group-hover:scale-105 group-hover:shadow-xl transition duration-300 cursor-pointer"
+            onclick="openLightbox(this)" />
+          <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-white text-base font-medium opacity-0 group-hover:opacity-100 transition">Car</div>
+        </div>
+
+        <div class="relative group">
+          <img src="images/electronics.jpg" alt="Electronics"
+            class="w-full aspect-square object-cover rounded-xl shadow-md transform group-hover:scale-105 group-hover:shadow-xl transition duration-300 cursor-pointer"
+            onclick="openLightbox(this)" />
+          <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-white text-base font-medium opacity-0 group-hover:opacity-100 transition">Electronics</div>
+        </div>
+
+        <div class="relative group">
+          <img src="images/ship.jpg" alt="Ship"
+            class="w-full aspect-square object-cover rounded-xl shadow-md transform group-hover:scale-105 group-hover:shadow-xl transition duration-300 cursor-pointer"
+            onclick="openLightbox(this)" />
+          <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-white text-base font-medium opacity-0 group-hover:opacity-100 transition">Ship</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox"
+      class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
+      <span class="absolute top-6 right-8 text-white text-3xl cursor-pointer" onclick="closeLightbox()">&times;</span>
+      <img id="lightbox-img" src="" alt="Expanded view"
+        class="max-h-[80%] max-w-[90%] rounded-lg shadow-lg" />
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 mt-10 text-gray-700">
+    <p class="text-sm">
+      &copy; 2025 PRIME SHIPPING & LOGISTICS. All rights reserved. 
+      <a href="privacy.html" class="underline hover:text-blue-600">Privacy Policy</a>
+    </p>
+  </footer>
+
+  <script>
+    function openLightbox(img) {
+      document.getElementById("lightbox").classList.remove("hidden");
+      document.getElementById("lightbox-img").src = img.src;
+    }
+    function closeLightbox() {
+      document.getElementById("lightbox").classList.add("hidden");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prime Shipping & Logistics</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[url('images/background.jpg')] bg-cover bg-center bg-fixed text-blue-800 relative">
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/18156082117"
+     class="fixed bottom-6 right-6 z-50 animate-bounce hover:scale-110 transition-transform bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg"
+     target="_blank" aria-label="Chat on WhatsApp">
+     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+         <path d="M20.52 3.48A11.78 11.78 0 0012 0C5.37 0 0 5.37 0 12c0 2.12.56 4.18 1.63 6.02L0 24l6.17-1.61A11.96 11.96 0 0012 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.21-3.48-8.52zM12 21.82c-1.86 0-3.67-.5-5.26-1.45l-.38-.23-3.65.95.97-3.56-.25-.37A9.81 9.81 0 012.18 12C2.18 6.59 6.59 2.18 12 2.18c2.62 0 5.09 1.02 6.94 2.87A9.78 9.78 0 0121.82 12c0 5.41-4.41 9.82-9.82 9.82z"/>
+         <path d="M17.49 14.36c-.29-.14-1.72-.85-1.99-.94-.27-.1-.46-.14-.65.14s-.75.94-.92 1.13c-.17.19-.34.21-.63.07-.29-.14-1.23-.45-2.34-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.12-.59.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.65-1.56-.89-2.13-.23-.55-.47-.47-.65-.48-.17-.01-.36-.01-.55-.01-.19 0-.5.07-.76.36s-1 1-1 2.44 1.03 2.83 1.17 3.02c.14.19 2.02 3.09 4.9 4.33.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.56-.08 1.72-.7 1.96-1.38.24-.68.24-1.27.17-1.38-.07-.11-.26-.18-.55-.32z"/>
+     </svg>
+  </a>
+
+  <!-- Header / Navigation -->
+  <header class="shadow bg-blue-800 bg-opacity-80">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center">
+        <img src="images/logo.jpg" alt="logo" class="h-20 rounded-lg shadow-lg border-4 border-blue-700">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-6 text-white">
+        <a href="index.html" class="hover:text-yellow-400 transition">Home</a>
+        <a href="services.html" class="hover:text-yellow-400 transition">Services</a>
+        <a href="gallery.html" class="hover:text-yellow-400 transition">Gallery</a>
+        <a href="about.html" class="hover:text-yellow-400 transition">About Us</a>
+        <a href="contact.html" class="hover:text-yellow-400 transition">Contact</a>
+      </nav>
+      <!-- Mobile Menu Button -->
+      <button id="menu-toggle" class="md:hidden text-white focus:outline-none text-2xl">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-blue-900 text-white px-4 py-2 space-y-2">
+      <a href="index.html" class="block hover:text-yellow-400 transition">Home</a>
+      <a href="services.html" class="block hover:text-yellow-400 transition">Services</a>
+      <a href="gallery.html" class="block hover:text-yellow-400 transition">Gallery</a>
+      <a href="about.html" class="block hover:text-yellow-400 transition">About Us</a>
+      <a href="contact.html" class="block hover:text-yellow-400 transition">Contact</a>
+    </div>
+  </header>
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+  <!-- Hero Section -->
+  <section class="px-6 py-10 min-h-screen flex items-center justify-center">
+    <div class="relative w-full max-w-5xl text-center">
+      <div class="bg-black bg-opacity-50 rounded-3xl flex flex-col justify-center items-center px-6 py-10">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-white drop-shadow-lg leading-tight">
+          Reliable Shipping. Anytime. Anywhere.
+        </h2>
+        <p class="mt-3 text-base md:text-lg text-gray-200 max-w-2xl">
+         We Buy and Ship the World to You
+Fast, secure, and affordable overseas shipping for vehicles, electronics, and general goods—delivered safely, anywhere around the globe.
+        </p>
+        <a href="contact.html" class="mt-6 inline-block bg-yellow-400 text-blue-800 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-yellow-500 transition">
+          Get a Free Quote
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Auction Services -->
+ <section class="px-6 py-16 text-center bg-black bg-opacity-50 mt-10">
+  <h2 class="text-3xl md:text-4xl font-bold text-white">Auction & Services</h2>
+  <p class="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
+    For cars from auction sites, here are the auctions we purchase from:
+  </p>
+
+  <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+
+    <!-- Copart -->
+    <div class="flex flex-col items-center space-y-2 bg-white rounded-xl shadow p-6 hover:shadow-lg transition transform">
+      <img src="images/copart-logo.png" alt="Copart" class="h-12">
+      <span class="text-blue-600 font-semibold">Copart</span>
+    </div>
+
+    <!-- IAAI -->
+    <div class="flex flex-col items-center space-y-2 bg-white rounded-xl shadow p-6 hover:shadow-lg transition transform">
+      <img src="images/iaai-logo.jpg" alt="IAAI" class="h-12 rounded">
+      <span class="text-blue-600 font-semibold">IAAI</span>
+    </div>
+
+  </div>
+</section>
+
+
+    </div>
+  </section>
+
+   <!-- ✅ Homepage Services Spot -->
+<section id="services-spot" class="py-16 bg-gray-50 bg-opacity-90">
+  <div class="container mx-auto px-4 grid gap-10 md:grid-cols-3 text-center">
+
+    <!-- Auto Transport -->
+    <a href="services.html#auto-transport" 
+       class="bg-white p-6 shadow-lg rounded-xl hover:shadow-2xl transition-shadow duration-300 block">
+      <img src="images/car (1).jpg" alt="Auto Transport" 
+           class="w-full h-40 object-cover rounded-lg mb-4" />
+      <h4 class="text-xl font-bold text-blue-700 mb-2">Auto Transport</h4>
+      <p class="text-gray-600">Safe and stress-free car shipping across 48 U.S. states.</p>
+    </a>
+
+    <!-- Sea Freight -->
+    <a href="services.html#sea-freight" 
+       class="bg-white p-6 shadow-lg rounded-xl hover:shadow-2xl transition-shadow duration-300 block">
+      <img src="images/port (1).jpg" alt="Sea Freight" 
+           class="w-full h-40 object-cover rounded-lg mb-4" />
+      <h4 class="text-xl font-bold text-blue-700 mb-2">Sea Freight</h4>
+      <p class="text-gray-600">Cost-effective international shipping via trusted ocean carriers.</p>
+    </a>
+
+    <!-- Air Freight -->
+    <a href="services.html#air-freight" 
+       class="bg-white p-6 shadow-lg rounded-xl hover:shadow-2xl transition-shadow duration-300 block">
+      <img src="images/aircargo.jpg" alt="Air Freight" 
+           class="w-full h-40 object-cover rounded-lg mb-4" />
+      <h4 class="text-xl font-bold text-blue-700 mb-2">Air Freight</h4>
+      <p class="text-gray-600">Fast and secure global delivery for urgent shipments.</p>
+    </a>
+
+  </div>
+</section>
+
+ <!-- Categories Section -->
+  <section id="categories" class="py-16 bg-white bg-opacity-80">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-8 text-blue-800">Categories</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-6 shadow-lg rounded-xl">
+          <h4 class="text-xl font-bold text-blue-700 mb-4">General Goods</h4>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>Rice</li>
+            <li>Oats</li>
+            <li>Laundry Detergent</li>
+            <li>Cooking Oil</li>
+            <li>Spaghetti</li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 p-6 shadow-lg rounded-xl">
+          <h4 class="text-xl font-bold text-blue-700 mb-4">Electronics</h4>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>Laptops</li>
+            <li>Mobile Phones</li>
+            <li>Televisions</li>
+            <li>Home Appliances</li>
+            <li>Gaming Consoles</li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 p-6 shadow-lg rounded-xl">
+          <h4 class="text-xl font-bold text-blue-700 mb-4">Cars</h4>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>Luxury Cars</li>
+            <li>SUVs</li>
+            <li>Electric Cars</li>
+            <li>Trucks</li>
+            <li>Motorcycles</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!-- Contact Form Section -->
+  <section id="contact-social" class="py-16 relative z-10">
+    <div class="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
+    <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center relative z-10">
+<!-- Contact Form -->
+      <div id="contact" class="py-10 px-4">
+        <div class="max-w-sm mx-auto bg-white bg-opacity-90 rounded-xl shadow-lg p-4 text-gray-800">
+          <h3 class="text-xl font-bold text-blue-800 mb-4 flex items-center">
+            <svg class="w-6 h-6 mr-2 text-blue-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M16 12A4 4 0 008 12m8 0a4 4 0 00-8 0m8 0v2a4 4 0 01-4 4 4 4 0 01-4-4v-2m8 0V8a4 4 0 00-8 0v4" />
+            </svg>
+            Contact Us
+          </h3>
+          <form action="https://formspree.io/f/xvgqedbo" method="POST" class="space-y-3">
+            <input type="text" name="name" placeholder="Full Name" required
+              class="w-full px-3 py-1.5 border border-gray-300 rounded-md text-sm focus:ring focus:ring-blue-200" />
+            <input type="email" name="email" placeholder="Email Address" required
+              class="w-full px-3 py-1.5 border border-gray-300 rounded-md text-sm focus:ring focus:ring-blue-200" />
+            <input type="tel" name="phone" placeholder="Phone (optional)"
+              class="w-full px-3 py-1.5 border border-gray-300 rounded-md text-sm focus:ring focus:ring-blue-200" />
+            <textarea name="message" rows="3" placeholder="Your Message" required
+              class="w-full px-3 py-1.5 border border-gray-300 rounded-md text-sm focus:ring focus:ring-blue-200"></textarea>
+            <button type="submit"
+              class="w-full bg-blue-600 text-white text-sm py-2 rounded-md hover:bg-blue-700 transition duration-300">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+<!-- Social Media + Partners Section (Transparent Background) -->
+<section class="py-10">
+  <div class="container mx-auto text-center">
+    <h2 class="text-xl font-semibold text-gray-800 mb-8">Connect With Us</h2>
+<!-- Icons and Logos -->
+    <div class="flex flex-wrap justify-center items-center gap-8">
+       <!-- Facebook -->
+      <a href="https://facebook.com/YourPageHere" target="_blank" aria-label="Facebook"
+         class="w-12 h-12 flex items-center justify-center rounded-full text-blue-600 
+                hover:bg-blue-600 hover:text-white hover:scale-110 transition transform">
+        <svg fill="currentColor" viewBox="0 0 24 24" class="w-7 h-7">
+          <path d="M22.676 0H1.326C.593 0 0 .593 0 
+                   1.326v21.348C0 23.407.593 24 1.326 24h11.495v-9.294H9.691v-3.622h3.13V8.413c0-3.1 
+                   1.893-4.788 4.658-4.788 1.325 0 2.464.099 2.795.143v3.24l-1.918.001c-1.504 
+                   0-1.795.715-1.795 1.762v2.31h3.587l-.467 3.622h-3.12V24h6.116C23.407 
+                   24 24 23.407 24 22.674V1.326C24 .593 23.407 0 22.676 0z"/>
+        </svg>
+      </a>
+ <!-- Instagram -->
+      <a href="https://www.instagram.com/plog.shipping_/profilecard/?igsh=b2RkeGRpeHg3bWxv" 
+         target="_blank" aria-label="Instagram"
+         class="w-12 h-12 flex items-center justify-center rounded-full text-pink-500 
+                hover:bg-pink-500 hover:text-white hover:scale-110 transition transform">
+        <svg fill="currentColor" viewBox="0 0 24 24" class="w-7 h-7">
+          <path d="M12 2.163c3.204 0 3.584.012 
+                   4.85.07 1.366.062 2.633.337 3.608 
+                   1.312.975.975 1.25 2.242 
+                   1.312 3.608.058 1.266.069 
+                   1.645.069 4.85s-.012 3.584-.07 
+                   4.85c-.062 1.366-.337 2.633-1.312 
+                   3.608-.975.975-2.242 1.25-3.608 
+                   1.312-1.266.058-1.645.069-4.85.069s-3.584-.012-4.85-.07c-1.366-.062-2.633-.337-3.608-1.312-.975-.975-1.25-2.242-1.312-3.608-.058-1.266-.069-1.645-.069-4.85s.012-3.584.07-4.85c.062-1.366.337-2.633 
+                   1.312-3.608.975-.975 2.242-1.25 
+                   3.608-1.312C8.416 2.175 8.796 
+                   2.163 12 2.163z"/>
+          <path d="M12 5.838a6.162 6.162 0 
+                   100 12.324 6.162 6.162 0 000-12.324zm0 
+                   10.162a3.999 3.999 0 110-7.998 
+                   3.999 3.999 0 010 7.998zM18.406 
+                   4.594a1.44 1.44 0 100 2.88 
+                   1.44 1.44 0 000-2.88z"/>
+        </svg>
+      </a>
+<!-- LinkedIn -->
+      <a href="https://linkedin.com/in/YourProfileHere" target="_blank" aria-label="LinkedIn"
+         class="w-12 h-12 flex items-center justify-center rounded-full text-blue-700 
+                hover:bg-blue-700 hover:text-white hover:scale-110 transition transform">
+        <svg fill="currentColor" viewBox="0 0 24 24" class="w-7 h-7">
+          <path d="M22.23 0H1.77C.792 0 0 .774 0 
+                   1.729v20.542C0 23.225.792 24 1.77 
+                   24h20.46c.978 0 1.77-.774 
+                   1.77-1.729V1.729C24 .774 23.208 0 
+                   22.23 0zM7.09 20.452H3.54V9.037h3.55v11.415zM5.31 
+                   7.591a2.06 2.06 0 110-4.12 
+                   2.06 2.06 0 010 4.12zM20.452 
+                   20.452h-3.55v-5.605c0-1.337-.024-3.06-1.865-3.06-1.867 
+                   0-2.153 1.456-2.153 2.963v5.702h-3.55V9.037h3.41v1.561h.048c.475-.897 
+                   1.637-1.845 3.368-1.845 3.6 0 4.266 
+                   2.368 4.266 5.455v6.244z"/>
+        </svg>
+      </a>
+      <!-- Copart Logo -->
+      <a href="https://www.copart.com" target="_blank" aria-label="Copart"
+         class="flex items-center justify-center hover:scale-110 transition transform">
+        <img src="images/copart-logo.png" alt="Copart" class="h-12">
+      </a>
+<!-- IAAI Logo -->
+      <a href="https://www.iaai.com" target="_blank" aria-label="IAAI"
+         class="flex items-center justify-center hover:scale-110 transition transform">
+        <img src="images/iaai-logo.jpg" alt="IAAI" class="h-12 rounded">
+      </a>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="text-gray-600 text-center py-6 mt-10">
+  <p class="text-sm">
+    &copy; 2025 PRIME SHIPPING & LOGISTICS. All rights reserved. 
+                <a href="privacy.html" class="underline hover:text-blue-600">Privacy Policy</a>
+  </p>
+</footer>
+</body>
+</html>
+
