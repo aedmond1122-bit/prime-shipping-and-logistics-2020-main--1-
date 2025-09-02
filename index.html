@@ -189,7 +189,20 @@ Fast, secure, and affordable overseas shipping for vehicles, electronics, and ge
       Contact Us
     </h3>
 
-    <!-- Your form fields go here -->
+    <form action="https://formspree.io/f/xvgqedbo" method="POST" class="space-y-3">
+      <input type="text" name="name" placeholder="Full Name" required
+        class="w-full px-3 py-1.5 border border-gray-300 rounded-md text-sm focus:ring focus:ring-blue-200" />
+      <input type="email" name="email" placeholder="Email Address" required
+        class="w-full px-3 py-1.5 border border-gray-300 rounded-md text-sm focus:ring focus:ring-blue-200" />
+      <input type="tel" name="phone" placeholder="Phone (optional)"
+        class="w-full px-3 py-1.5 border border-gray-300 rounded-md text-sm focus:ring focus:ring-blue-200" />
+      <textarea name="message" rows="3" placeholder="Your Message" required
+        class="w-full px-3 py-1.5 border border-gray-300 rounded-md text-sm focus:ring focus:ring-blue-200"></textarea>
+      <button type="submit"
+        class="w-full bg-blue-600 text-white text-sm py-2 rounded-md hover:bg-blue-700 transition duration-300">
+        Send
+      </button>
+    </form>
   </div>
 </div>
 
